@@ -28,7 +28,10 @@ export default async function Blog() {
     "text-pink-700",
   ];
   return (
-    <section className="flex h-full w-full flex-col items-center justify-center bg-color3 py-[4rem] pb-[7rem] text-left">
+    <section
+      className="flex h-full w-full flex-col items-center justify-center bg-color3 py-[4rem] pb-[7rem] text-left"
+      id="blog"
+    >
       <div className="mx-auto w-fit">
         <span className="mb-4 text-[1.5rem] font-bold uppercase text-color4">
           Latest Blog Articles
@@ -41,12 +44,12 @@ export default async function Blog() {
               </h2>
               <div className="flex flex-col items-center gap-8 px-10 pt-16 perspective">
                 {feed.item
-                  .filter((e, i) => i < 5)
+                  .filter((_e, i) => i < 5)
                   .sort((a, b) => +new Date(b.pubDate) - +new Date(a.pubDate))
                   .map((e, i) => (
                     <div
                       key={i}
-                      className={`flex h-full min-h-[18rem] max-w-[40rem] cursor-pointer flex-row justify-center gap-4 rounded-lg border border-gray-100 bg-white pb-8 pl-4 pr-6 pt-4 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl ${i % 2 === 0 ? "rotate-y-20 self-start" : "-rotate-y-20 self-end"}`}
+                      className={`flex h-full min-h-[18rem] max-w-[40rem] cursor-pointer flex-row justify-center gap-4 rounded-lg border border-gray-100 bg-white pb-8 pl-4 pr-6 pt-4 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl ${i % 2 === 0 ? "self-start rotate-y-1" : "self-end -rotate-y-1"}`}
                     >
                       <Image
                         src={feed.image.url}
@@ -67,7 +70,10 @@ export default async function Blog() {
                             {e.category.map((cat, catI) => {
                               return (
                                 <span
-                                  className={randomColors[((i * 4) % 2) + catI]}
+                                  className={
+                                    randomColors[(i % 2) * 4 + catI] +
+                                    " capitalize"
+                                  }
                                   key={"cat" + catI}
                                 >
                                   {"#" + cat}

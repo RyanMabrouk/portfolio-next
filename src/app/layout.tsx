@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rayen.dev",
+  title: "Rayen.tech",
   description: "Rayen Mabrouk's personal website",
 };
 

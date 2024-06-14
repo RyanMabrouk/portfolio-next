@@ -2,11 +2,23 @@ import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 const customPlugin = plugin(function ({ addUtilities }: any) {
   addUtilities({
-    ".rotate-y-20": {
+    ".rotate-y-1": {
       transform: "rotateY(20deg)",
     },
-    ".-rotate-y-20": {
+    ".-rotate-y-1": {
       transform: "rotateY(-20deg)",
+    },
+    ".rotate-y-2": {
+      transform: "rotateY(20deg)",
+    },
+    ".-rotate-y-2": {
+      transform: "rotateY(-20deg)",
+    },
+    ".rotate-x-1": {
+      transform: "rotateX(10deg)",
+    },
+    ".-rotate-x-1": {
+      transform: "rotateX(-10deg)",
     },
     ".preserve-3d": {
       transformStyle: "preserve-3d",

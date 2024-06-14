@@ -64,7 +64,7 @@ export function Home() {
           <div>
             <Image
               src={myPhoto}
-              className="relative size-[20rem] min-w-[18rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out]"
+              className="relative size-[20rem] min-w-[18rem] min-h-[18rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out]"
               alt=""
             />
           </div>
@@ -82,7 +82,7 @@ export function Home() {
                     iconsLink +
                     `&theme=${theme === "dark" ? "light" : "dark"}`
                   }
-                  className="size-28 cursor-pointer transition-all duration-300 ease-linear hover:translate-y-[-5px] hover:scale-[120%]"
+                  className="size-28 min-w-[5rem] cursor-pointer transition-all duration-300 ease-linear hover:translate-y-[-5px] hover:scale-[120%]"
                   alt=""
                   width={40}
                   height={40}
