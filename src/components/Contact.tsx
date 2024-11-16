@@ -17,7 +17,7 @@ export function Contact() {
     {
       name: "Mail",
       icon: <FiMail />,
-      info: "Rayenmbrouk@takiacademyteam.com",
+      info: "business@rayenmabrouk.tech",
     },
   ];
   return (
