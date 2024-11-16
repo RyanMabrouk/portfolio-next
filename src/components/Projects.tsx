@@ -3,8 +3,9 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import fitboxImg from "@/public/fitbox.png";
 import tuniflixImg from "@/public/tuniflix.jpeg";
-import softytravelsImg from "@/public/softytravels.png";
 import etutor from "@/public/e-tutor.png";
+import safari from "@/public/safari.png";
+import evowave from "@/public/evowave-2.png";
 
 export function Projects() {
   const randomColors = [
@@ -19,6 +20,16 @@ export function Projects() {
   ];
   const projects = [
     {
+      title: "Evowave",
+      category: ["startup", "software development"],
+      description: `
+      Evowave is a dynamic startup at the forefront of web innovation, delivering cutting-edge SaaS solutions that redefine digital experiences.
+      We specialize in creating powerful, user-centric web tools that address the complex challenges faced by modern businesses in the online space.
+    Our team of passionate tech enthusiasts and creative problem-solvers is dedicated to pushing the boundaries of what's possible on the web.`,
+      image: evowave,
+      liveLink: "https://www.evowave.tech/",
+    },
+    {
       title: "Fitbox Gym Website",
       category: ["react", "tailwind css", "firebase", "redux toolkit"],
       description: `I created a website for FitBox, my local gym, using React for smooth navigation and interaction.
@@ -28,7 +39,7 @@ export function Projects() {
               This project demonstrates my ability to build user-friendly and attractive websites.`,
       image: fitboxImg,
       githubLink: "https://github.com/RyanMabrouk/Fitbox?tab=readme-ov-file",
-      liveLink: "https://fitbox-30091.web.app/",
+      liveLink: "https://fitbox-gym.web.app/",
     },
     {
       title: "Tuniflix",
@@ -41,15 +52,16 @@ export function Projects() {
       liveLink: "https://tunifilm-eeca8.web.app/",
     },
     {
-      title: "Softy Travels",
-      category: ["react", "react Query", "supabase", "tailwind css"],
-      description: `An interactive dashboard designed to assist
-           and inspire avid travelers, providing an array of tools and resources for seamless exploration and adventures
-            , for this project I used React Query for state management and supabase as a backend service.`,
-      image: softytravelsImg,
-      githubLink:
-        "https://github.com/RyanMabrouk/Softy-Travels?tab=readme-ov-file",
-      liveLink: "https://softy-travels.web.app/Home",
+      title: "Sfari Kids",
+      category: ["next", "react Query", "supabase", "tailwind css"],
+      description: ` developed Sfari Kids using Next.js, React Query, and Supabase to
+       create an engaging e-commerce platform for children's toys. The site offers a 
+       diverse selection of toys, games, and educational products for kids of all ages.
+        This project showcases my ability to build interactive and user-friendly websites
+         with a strong emphasis on user experience. Additionally, the website includes an
+          admin dashboard for managing products and orders efficiently. `,
+      image: safari,
+      liveLink: "https://safari-kids.vercel.app",
     },
     {
       title: "E-Tutor API",
@@ -78,7 +90,7 @@ export function Projects() {
                   <Image
                     src={e.image}
                     alt=""
-                    className="h-full w-full rounded-lg transition-all duration-[400ms] ease-in-out group-hover:scale-[110%] group-hover:blur-sm group-hover:brightness-50"
+                    className="h-full w-full rounded-lg object-cover transition-all duration-[400ms] ease-in-out group-hover:scale-[110%] group-hover:blur-sm group-hover:brightness-50"
                   />
                   <span
                     className={`absolute flex h-fit w-fit flex-row items-center gap-5 text-white opacity-0 group-hover:opacity-100 ${

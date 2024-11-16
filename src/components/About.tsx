@@ -27,20 +27,17 @@ export function About() {
             About me
           </h3>
           <h4 className="mb-8 text-[2rem] leading-[1.4] text-color1">
-            Full-Satck Developer <br /> based in Sousse, Tunisia 📍
+            Full-Satck Developer <br /> And Startup Co-Founder 📍
           </h4>
           <p className="text-color5">
-            {
-              "Hey, my name is Rayen, and I'm a Full Stack Developer. My passion is to create and develop comprehensive solutions, from a clean UI/UX on the front-end to robust and efficient systems on the back-end."
-            }
+            Hey, my name is Rayen, and {"I'm"} a Full Stack Developer. My
+            primary job is a Software Developer in{" "}
+            <strong className="mx-1">Takiacademy</strong> the biggest e-learning
+            platform in Tunisia. {"I'm"} also a co-founder of a startup called
+            <strong className="mx-1">Evowave</strong>where we build web and
+            mobile applications for clients.
             <br />
             <br />
-            Currently, my primary tech stack includes Next.js for building user
-            interfaces, Tailwind CSS for styling, and TypeScript for adding
-            static types to JavaScript. I also use Nest.js for building
-            efficient, scalable Node.js server-side applications, Supabase as an
-            open source Firebase alternative, and Docker for creating,
-            deploying, and running applications by using containerization.
           </p>
         </div>
       </section>

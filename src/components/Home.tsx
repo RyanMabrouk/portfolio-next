@@ -39,12 +39,12 @@ export function Home() {
       <section className="mx-auto flex h-full w-fit max-w-[60%] flex-col items-center justify-center gap-4">
         <div className="flex flex-row items-center">
           <div className="flex max-w-[35rem] flex-col gap-6">
-            <div className="my-8 text-[3rem] font-bold leading-[1.2] text-color1">
-              Full-Stack Javascript Developer 👋🏻
+            <div className="my-8 text-[2.5rem] font-bold leading-[1.2] text-color1">
+              Software Developer 👋🏻
             </div>
             <div className="max-w-[30rem] text-lg">
               {
-                "Hi, I'm Rayen Mabrouk. A passionate Full-Stack Js Developer based in Sousse, Tunisia. 📍"
+                "Hi, I'm Rayen Mabrouk. A passionate Software Developer based in Sousse, Tunisia. 📍"
               }
             </div>
             <div className="flex flex-row gap-3">
@@ -64,7 +64,7 @@ export function Home() {
           <div>
             <Image
               src={myPhoto}
-              className="relative size-[20rem] min-w-[18rem] min-h-[18rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out]"
+              className="relative size-[20rem] min-h-[18rem] min-w-[18rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out]"
               alt=""
             />
           </div>

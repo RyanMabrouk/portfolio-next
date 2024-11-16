@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["skillicons.dev", "media.dev.to", "via.placeholder.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "skillicons.dev",
+      },
+      {
+        protocol: "https",
+        hostname: "media.dev.to",
+      },
+      {
+        protocol: "https",
+        hostname: "via.placeholder.com",
+      },
+      {
+        protocol: "https",
+        hostname: "media2.dev.to",
+      },
+    ],
     dangerouslyAllowSVG: true,
   },
 };
