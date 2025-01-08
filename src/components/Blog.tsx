@@ -16,7 +16,7 @@ export default async function Blog() {
       return null;
     }
   };
-  const feed = await fetchRSSFeed("https://dev.to/feed/ryanmabrouk");
+  const feed = await fetchRSSFeed("https://dev.to/feed/rayenmabrouk");
   const randomColors = [
     "text-orange-700",
     "text-blue-700",
