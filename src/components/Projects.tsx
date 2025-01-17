@@ -74,6 +74,7 @@ export function Projects() {
       githubLink: "https://github.com/RyanMabrouk/E-Tutor-Api",
     },
   ];
+
   return (
     <section className="flex h-full w-full bg-color3 pt-[4rem]">
       <div className="mx-auto flex flex-col gap-10" id="projects">
