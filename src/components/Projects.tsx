@@ -6,6 +6,9 @@ import tuniflixImg from "@/public/tuniflix.jpeg";
 import etutor from "@/public/e-tutor.png";
 import safari from "@/public/safari.png";
 import evowave from "@/public/evowave-2.png";
+import iwen from "@/public/iwan-balck.png";
+import maison_decor from "@/public/maison-decor.png";
+import softyskills from "@/public/softyskills.jpg";
 
 export function Projects() {
   const randomColors = [
@@ -30,6 +33,15 @@ export function Projects() {
       liveLink: "https://www.evowave.tech/",
     },
     {
+      title: "Softy Skills",
+      category: ["nestjs", "sentry", "docker", "nginx"],
+      description: `Softy Skills is a platform that helps users improve their coding skills through interactive courses and engaging content.
+       I built the backend for Softy Skills using NestJS, Sentry for error tracking, Docker for containerization, and Nginx for load balancing.
+        This project demonstrates my ability to create robust, scalable systems that deliver a seamless user experience.`,
+      image: softyskills,
+      liveLink: "https://www.softyskills.com/",
+    },
+    {
       title: "Fitbox Gym Website",
       category: ["react", "tailwind css", "firebase", "redux toolkit"],
       description: `I created a website for FitBox, my local gym, using React for smooth navigation and interaction.
@@ -41,16 +53,7 @@ export function Projects() {
       githubLink: "https://github.com/RyanMabrouk/Fitbox?tab=readme-ov-file",
       liveLink: "https://fitbox-gym.web.app/",
     },
-    {
-      title: "Tuniflix",
-      category: ["react", "css", "axios", "redux toolkit"],
-      description: `I developed Tuniflix using React and the TMDB API to provide a vast library of movies and TV shows.
-           With Tuniflix, users can discover new shows and learn more about their favorites.
-            This project showcases my skills in API integration and creating engaging, user-friendly interfaces.`,
-      image: tuniflixImg,
-      githubLink: "https://github.com/RyanMabrouk/tuniflix?tab=readme-ov-file",
-      liveLink: "https://tunifilm-eeca8.web.app/",
-    },
+
     {
       title: "Sfari Kids",
       category: ["next", "react Query", "supabase", "tailwind css"],
@@ -61,33 +64,62 @@ export function Projects() {
          with a strong emphasis on user experience. Additionally, the website includes an
           admin dashboard for managing products and orders efficiently. `,
       image: safari,
-      liveLink: "https://safari-kids.vercel.app",
+      liveLink: "https://sfari-jouets.com",
+    },
+
+    {
+      title: "Dar Iwan Shop",
+      category: ["nestjs", "nextjs", "supabase", "tailwind css"],
+      description:
+        "I built a custom e-commerce platform for Iwen Publishing House using Next.js, NestJS, and Supabase. It features book listings, cart management, an admin dashboard, and a customer review system. Designed for performance and SEO, it simplifies book sales and management.",
+      image: iwen,
+      liveLink: "https://www.dar-iwan.shop/",
     },
     {
-      title: "E-Tutor API",
-      category: ["nestjs", "jest", "postgres", "socket.io"],
-      description: `I built an API for an e-learning platform using NestJS, enabling features like
-         buying courses and lectures, role-based access control (RBAC),
-           real-time messaging, notifications and more.. This project demonstrates
-            my backend development skills and ability to create robust, scalable systems. `,
-      image: etutor,
-      githubLink: "https://github.com/RyanMabrouk/E-Tutor-Api",
+      title: "Maison Decor",
+      category: ["nextjs", "supabase", "tailwind css", "react Query"],
+      description:
+        "I built a custom e-commerce platform for Maison Decors using Next.js and Supabase. It features product listings, a smooth cart and checkout system, and an admin dashboard for managing inventory, orders, and promotions. Designed for performance and SEO, it enhances the shopping experience.",
+      image: maison_decor,
+      liveLink: "https://maisondecors.vercel.app/",
     },
+    {
+      title: "Tuniflix",
+      category: ["react", "css", "axios", "redux toolkit"],
+      description: `I developed Tuniflix using React and the TMDB API to provide a vast library of movies and TV shows.
+           With Tuniflix, users can discover new shows and learn more about their favorites.
+            This project showcases my skills in API integration and creating engaging, user-friendly interfaces.`,
+      image: tuniflixImg,
+      githubLink: "https://github.com/RyanMabrouk/tuniflix?tab=readme-ov-file",
+      liveLink: "https://tunifilm-eeca8.web.app/",
+    },
+    // {
+    //   title: "E-Tutor API",
+    //   category: ["nestjs", "jest", "postgres", "socket.io"],
+    //   description: `I built an API for an e-learning platform using NestJS, enabling features like
+    //      buying courses and lectures, role-based access control (RBAC),
+    //        real-time messaging, notifications and more.. This project demonstrates
+    //         my backend development skills and ability to create robust, scalable systems. `,
+    //   image: etutor,
+    //   githubLink: "https://github.com/RyanMabrouk/E-Tutor-Api",
+    // },
   ];
-  
 
   return (
     <section className="flex h-full w-full bg-color3 pt-[4rem]">
       <div className="mx-auto flex flex-col gap-10" id="projects">
-        <span className="mb-4 h-full text-[1.5rem] font-bold uppercase text-color4">
+        <span className="mx-4 mb-4 h-full text-[1.5rem] font-bold uppercase text-color4">
           Projects
         </span>
-        <div className="flex w-[70rem] flex-col justify-between gap-x-[5rem] gap-y-[3rem] px-10">
+        <div className="flex w-[70rem] flex-col justify-between gap-x-[5rem] gap-y-[3rem] px-10 max-[1060px]:justify-center max-[760px]:gap-y-[1rem]">
           {projects.length > 0 ? (
             projects.map((e, i) => (
-              <div key={i} className="flex w-full flex-row gap-4">
+              <div
+                key={i}
+                className="flex w-full flex-row gap-4 max-[1060px]:flex-col"
+              >
                 <div
-                  className={`group relative h-[17.5rem] w-[50rem] flex-row justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg transition-all duration-200 ease-linear hover:z-50 hover:rotate-0 hover:scale-105 hover:shadow-xl`}
+                  className={`group relative h-[17.5rem] w-[80svw] flex-row justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg transition-all duration-200 ease-linear hover:z-50 hover:rotate-0 hover:scale-105 hover:shadow-xl max-[1060px]:h-[20rem] max-[1060px]:w-[60svw] max-[760px]:w-[80svw]`}
                 >
                   <Image
                     src={e.image}
@@ -121,7 +153,7 @@ export function Projects() {
                     )}
                   </span>
                 </div>
-                <div className="z-10 flex h-full w-full flex-col items-start justify-start gap-3 px-4 py-4 transition-all duration-300 ease-linear">
+                <div className="z-10 flex h-full w-full flex-col items-start justify-start gap-3 px-4 py-4 transition-all duration-300 ease-linear max-[1060px]:w-[90svw] max-[760px]:h-[70%] max-[760px]:w-[100svw]">
                   <div className="flex flex-col gap-0.5">
                     <span className="text-2xl font-semibold text-color1">
                       {e.title}
@@ -163,7 +195,7 @@ export function Projects() {
                       })}
                     </span>
                   </div>
-                  <div className="text-color1">
+                  <div className="text-color1 max-[1060px]:w-[80%]">
                     <span>
                       {e.description.replace(/<[^>]*>?/gm, "").slice(0, 250)}
                     </span>

@@ -25,7 +25,7 @@ export function Contact() {
       id="contact"
       className="flex h-full w-full items-center justify-start bg-white pb-20 pt-10"
     >
-      <div className="mx-auto my-0 min-w-[75rem] px-16 py-0">
+      <div className="mx-auto my-0 w-[75svw] px-16 py-0 max-[800px]:px-0 max-[405px]:mx-4">
         <div className="flex flex-col">
           <p className="mb-4 text-[1.5rem] font-bold uppercase text-color4">
             contact
@@ -34,7 +34,7 @@ export function Contact() {
             {"Don't be shy! Hit me up! 👇"}
           </h3>
         </div>
-        <div className="mt-14 flex flex-wrap gap-[4rem]">
+        <div className="mt-14 flex flex-wrap gap-[4rem] max-[450px]:gap-[2rem]">
           {contactInfo.map((contact, index) => (
             <div key={index} className="flex items-center gap-6">
               <span className="flex h-14 w-14 items-center justify-center rounded-[50%] bg-white text-[1.75rem] text-color4 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
@@ -44,7 +44,7 @@ export function Contact() {
                 <h3 className="text-xl font-semibold text-color1">
                   {contact.name}
                 </h3>
-                <p className="text-[1.1rem] text-color5 no-underline">
+                <p className="text-[1.1rem] text-color5 no-underline line-clamp-1">
                   {contact.info}
                 </p>
               </div>

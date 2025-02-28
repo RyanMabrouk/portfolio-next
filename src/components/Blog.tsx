@@ -10,10 +10,8 @@ export default async function Blog() {
       // const parsedData = await parseStringPromise(response.data, {
       //   explicitArray: false,
       // });
-      console.log("🚀 ~ fetchRSSFeed ~ parsedData:", response.data);
       return response.data;
     } catch (error) {
-      console.error("Error fetching RSS feed:", error);
       return null;
     }
   };
@@ -36,18 +34,18 @@ export default async function Blog() {
       id="blog"
     >
       <div className="mx-auto w-fit">
-        <span className="mb-4 text-[1.5rem] font-bold uppercase text-color4">
+        <span className="mx-3 mb-4 text-[1.5rem] font-bold uppercase text-color4 max-[1050px]:text-[1.2rem]">
           Latest Blog Articles
         </span>
         <div className="w-full">
           {feed && feed.length > 0 ? (
-            <div className="mx-auto flex w-[68rem] flex-col">
-              <h2 className="text-[1.5rem] font-semibold text-color1">
+            <div className="mx-auto flex w-[68svw] flex-col max-[660px]:w-[85svw] max-[500px]:w-[100svw]">
+              <h2 className="mx-3 text-[1.5rem] font-semibold text-color1 max-[1050px]:text-[1.1rem]">
                 {
                   "The latest articles on DEV Community by Rayen Mabrouk (@rayenmabrouk)."
                 }
               </h2>
-              <div className="flex flex-col items-center gap-8 px-10 pt-16 perspective">
+              <div className="flex flex-col items-center gap-8 px-10 pt-16 perspective max-[500px]:px-2">
                 {feed
                   // ?.filter((_e, i) => i < 5)
                   .sort(
@@ -57,7 +55,7 @@ export default async function Blog() {
                   .map((e, i) => (
                     <div
                       key={i}
-                      className={`flex h-full min-h-[15rem] max-w-[40rem] cursor-pointer flex-col justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white p-2 pb-8 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl ${i % 2 === 0 ? "self-start" : "self-end"}`}
+                      className={`flex h-full min-h-[15rem] max-w-full cursor-pointer flex-col justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white p-2 pb-8 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl max-[1000px]:self-center ${i % 2 === 0 ? "r self-start" : "self-end"}`}
                     >
                       <Image
                         src={e.social_image}
@@ -76,14 +74,14 @@ export default async function Blog() {
                               height={120}
                               className="mt-1 size-16 justify-self-start rounded-full"
                             />
-                            <span className="text-2xl font-semibold">
+                            <span className="text-2xl font-semibold max-[700px]:text-[1rem] max-[700px]:leading-6">
                               {e.title}
                             </span>
                           </div>
                           <span className="text-color5">
                             {new Date(e.published_at).toLocaleString()}
                           </span>
-                          <span className="flex flex-row gap-2 text-sm">
+                          <span className="flex flex-row flex-wrap gap-2 text-sm">
                             {e.tag_list.map((cat, catI) => {
                               return (
                                 <span
