@@ -64,7 +64,7 @@ export function Home() {
           <div>
             <Image
               src={myPhoto}
-              className="relative min-h-[18rem] min-w-[18rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out] max-[750px]:h-[10rem] max-[750px]:w-[10rem] max-[540px]:h-[5rem] max-[540px]:w-[5rem]"
+              className="relative size-[20rem] min-h-[15rem] min-w-[15rem] animate-morph rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] border-[3px] border-solid border-[#2d2e32] bg-[50%] transition-all duration-[1s] ease-[ease-in-out] max-[750px]:h-[10rem] max-[750px]:w-[10rem] max-[540px]:h-[5rem] max-[540px]:w-[5rem]"
               alt=""
             />
           </div>

@@ -55,7 +55,9 @@ export default async function Blog() {
                   .map((e, i) => (
                     <div
                       key={i}
-                      className={`flex h-full min-h-[15rem] max-w-full cursor-pointer flex-col justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white p-2 pb-8 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl max-[1000px]:self-center ${i % 2 === 0 ? "r self-start" : "self-end"}`}
+                      className={`flex h-full min-h-[15rem] w-[70%] cursor-pointer flex-col justify-center gap-4 overflow-hidden rounded-lg border border-gray-100 bg-white p-2 pb-8 shadow-lg transition-all duration-200 ease-linear preserve-3d backface-hidden hover:z-50 hover:rotate-0 hover:scale-110 hover:shadow-xl max-[1000px]:w-full max-[1000px]:self-center ${
+                        i % 2 === 0 ? "self-start" : "self-end"
+                      }`}
                     >
                       <Image
                         src={e.social_image}
